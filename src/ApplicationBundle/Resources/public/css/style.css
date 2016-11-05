@@ -1,0 +1,154 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  background-color: #e74c3c; /* orange */
+}
+
+#contenu_body{
+    background-color: #D3D3D3; /*lightgray*/
+    padding:0px; margin:0px;
+}
+
+footer{
+  background-color: #e74c3c;/*#2C3E50;*/
+}
+
+footer .footer-avant{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  
+  color: white;
+
+  }
+
+  footer .footer-avant a{
+     color: white;
+  }
+
+footer .footer-apres{
+  padding-top: 20px;
+  background-color: #2C3E50;
+  color: white;
+  padding-bottom:20px; 
+  margin:0px;
+}
+
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eeeeee;
+}
+
+header {
+  text-align: center;
+
+  color: white;
+  
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+#services-list{
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+
+}
+
+#services-list p{
+  text-align: center;
+
+}
+
+#menu{
+  padding-bottom:   20px; 
+  padding-top:      20px; 
+  margin-bottom:    0px; 
+  bottom:           0px;
+}
+
+#menu li{
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+#menu li a:hover {
+  background-color: #0000CD; /*#f0ad4e;*/
+
+}
+
+#menu .active {
+  background-color: #D3D3D3;/*#5bc0de;*/
+
+}
+
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+
+p {
+  font-size: 20px;
+}
+
+p.small {
+  font-size: 16px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
+section.success {
+  background: #18BC9C;
+
+}
+
+#navTop{
+	color: white;
+	background-color: black;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  height:500px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+#navtab-service{
+  text-align: center;
+}
