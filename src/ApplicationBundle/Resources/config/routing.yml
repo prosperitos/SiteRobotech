@@ -1,3 +1,15 @@
 application_homepage:
     path:     /
     defaults: { _controller: ApplicationBundle:Default:index }
+
+application_about:
+    path:     /about
+    defaults: { _controller: ApplicationBundle:App:about }
+
+application_contact:
+    path:     /contact
+    defaults: { _controller: ApplicationBundle:App:contact }
+
+application_team:
+    path:     /team
+    defaults: { _controller: ApplicationBundle:App:team }

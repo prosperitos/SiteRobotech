@@ -1,26 +1,7 @@
-admin:
-    resource: "@AdminBundle/Controller/"
-    type:     annotation
-    prefix:   /admin
-
-user:
-    resource: "@UserBundle/Controller/"
-    type:     annotation
-    prefix:   /user
-
 application:
-    resource: "@ApplicationBundle/Controller/"
-    type:     annotation
-    prefix:   /
+    resource: "@ApplicationBundle/Resources/config/routing.yml"
+    prefix:   /app
 
-forum:
-    resource: "@ForumBundle/Controller/"
-    type:     annotation
-    prefix:   /forum
-
-blog:
-    resource: "@BlogBundle/Resources/config/routing.yml"
-    prefix:   /blog
 
 app:
     resource: "@AppBundle/Controller/"

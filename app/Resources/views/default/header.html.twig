@@ -6,7 +6,7 @@
 
 	<!-- -->
 	{% block menu %}
-      <div class="row" style="height:auto;">
+       <div class="row" style="height:auto;">
           <div class="well nav nav-pills" id="menu" >
                   <div class="navbar-header page-scroll">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#principale">
@@ -30,7 +30,8 @@
                                   <li class="page-scroll"><a href="">Equipe</a></li>
                                   <li class="page-scroll"><a href="">Partenaires</a></li>
                                   <li class="page-scroll"><a href="">Forum</a></li>
-                                  <li class="page-scroll"><a href="">Contact</a></li>
+                                  <li class="page-scroll"><a href="">A propos</a></li>
+                                  <li class="page-scroll"><a href=" {{ path('application_contact') }}">Contact</a></li>
                               {% endblock %}
                               
                           </ul>
