@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" value="abdoulaye KAMA, Prosper KIEMDE">
+        <meta name="publisher" content="Robotech">
+        <meta name="keywords" content="grobotech, esp, ucad, robotique, iot, domotique">
+        <meta name="reply-to" content="clubrobotechesp@gmail.com">
+        <meta name="category" content="internet">
+        <meta name="robots" content="index, follow">
+        <meta name="distribution" content="global">
+        <meta name="Description" content="Site du club Robotech de l'Ecole supérieure polytechnique">
+        <meta name="copyright" content="club robotech esp">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+        <title>{% block title %}{% endblock %}</title>
+            {% block stylesheets %}
+                {% include 'default/css.html.twig' %}
+            {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+
+        {% endblock %}
+        
+
+        {% block javascripts %}
+            {% include 'default/javascript.html.twig' %}
+        {% endblock %}
     </body>
 </html>

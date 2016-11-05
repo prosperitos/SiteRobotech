@@ -1,0 +1,44 @@
+<header>
+	<!-- navbar -->
+	<div class="row">
+
+	</div>
+
+	<!-- -->
+	{% block menu %}
+      <div class="row" style="height:auto;">
+          <div class="well nav nav-pills" id="menu" >
+                  <div class="navbar-header page-scroll">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#principale">
+                          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                      </button>
+                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+                          
+                            <a  href="{{ path('homepage') }}"><img src="{{ asset('') }}" /></a>
+                          
+                      </div>
+                      <br/>
+                  </div>
+                  
+                  <div class="collapse navbar-collapse" id="principale">
+                      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-left"><br/>
+                          <ul class="nav navbar-nav navbar-right">
+                              {% block menu_item %}
+                                  <li class="page-scroll"><a href="">Activités</a></li>
+                                  <li class="page-scroll"><a href="">Présentations</a></li>
+                                  <li class="page-scroll"><a href="">Blog</a></li>
+                                  <li class="page-scroll"><a href="">Equipe</a></li>
+                                  <li class="page-scroll"><a href="">Partenaires</a></li>
+                                  <li class="page-scroll"><a href="">Forum</a></li>
+                                  <li class="page-scroll"><a href="">Contact</a></li>
+                              {% endblock %}
+                              
+                          </ul>
+
+                      </div>
+                  </div>
+              </div>
+              <br/>
+      </div>
+	{% endblock %}
+</header>
